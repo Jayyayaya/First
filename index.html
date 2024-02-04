@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Portal</title>
+    <!--link css-->
+    <link rel="stylesheet" href="style.css">
+    <!--box icons-->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+</head>
+<body>
+    <!-- popup -->
+    <div class="popup" id="popup">
+        <h2>Hi Namrata</h2>
+        <h3>You won't be able to undo anything after entering!</h3>
+        <p>Do you want to proceed?</p>
+        <button type="button" onclick="handleYes()">Ofcourse</button>
+        <button type="button" onclick="handleNo()">No</button>
+    </div>
+    <div class="popup1" id="popup1">
+        <h2>Hi love</h2>
+        <h3>sdgsdfgs</h3>
+        <p>sdgdhdfh</p>
+        <button type="button" onclick="handleYes()">Ofcourse</button>
+        <button type="button" onclick="closePopup1()">No</button>
+    </div>
+    <div class="popup2" id="popup2">
+        <h2>Hi Love</h2>
+        <h3>sdgsdfgs</h3>
+        <p>sdgdhdfh</p>
+        <button type="button" onclick="handleYes()">Ofcourse</button>
+        <button type="button" onclick="closePopup2()">No</button>
+    </div>
+    <div class="popup3" id="popup3">
+        <h2>Hi Namrata</h2>
+        <h3>sdgsdfgs</h3>
+        <p>sdgdhdfh</p>
+        <button type="button" onclick="handleYes()">Ofcourse</button>
+        <button type="button" onclick="closePopup3()">No</button>
+    </div>
+
+    <!--navbar-->
+    <header>
+        <a href="#" class="logo"><img src="img/png.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Booking</a></li>
+            <li><a href="#delivery">Delivery</a></li>
+            
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!--home-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <span>Welcome Baby to</span>
+            <h1>Proposal Agreement</h1>
+            <p>Here is your chance to select or customize our date.</p>
+            <p>or you can just click on the button to contact me directly.</p>
+            <h2>Free love, just a tap away</h2>
+            <a href="#contact" class="btn">Book Love Now</a>
+        </div>
+        <div class="home-img">
+            <img src="img/WhatsApp Image 2024-02-03 at 00.43.10 (3).jpeg" alt="">
+        </div>
+    </section>
+
+    <!--Shop-->
+    <section class="shop" id="shop">
+        <div class="heading">
+            <span>Book Now</span>
+            <h1>Get Any Package</h1>
+            <h2>And "Be my Valentine??"</h2>
+            <p>Nah, valentine I think is a small word. So, why wouldn't you start to be my FOREVER?</p>
+            <p>Here is your chance to select or customize our date. or you can just click on the button to contact me directly.</p>
+
+        </div>
+        <div class="shop-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/WhatsApp Image 2024-02-03 at 00.43.10 (1).jpeg" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h2>A Fancy Date</h2>
+                <span>At any of your fav restaurant.</span>
+                <button type="button" class="btn" onclick="openPopup1()">Book Now</button>
+                <!-- <a href="popup.html" class="btn">Book Now</a> -->
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/WhatsApp Image 2024-02-03 at 00.43.10 (2).jpeg" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <h2>A Cozy Date</h2>
+                <span>At any small and comfy cafe.</span>
+                <button type="button" class="btn" onclick="openPopup2()">Book Now</button>
+                <!-- <a href="#" class="btn">Book Now</a> -->
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/WhatsApp Image 2024-02-03 at 00.45.24.jpeg" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <h2>A "Never Forget" Date</h2>
+                <span>At any heritage place.</span>
+                <button type="button" class="btn" onclick="openPopup3()">Book Now</button>
+                <!-- <a href="#" class="btn">Book Now</a> -->
+            </div>
+        </div>
+    </section>
+
+    <!--Delivery-->
+
+    <section class="delivery" id="delivery">
+        <div class="heading">
+            <span>Get Now</span>
+            <h1>Order with Loads of Love</h1>
+        </div>
+        <div class="container">
+            <div class="delivery-img">
+                <img src="img/WhatsApp Image 2024-02-03 at 01.42.52.jpeg" alt="">
+            </div>
+            <div class="delivery-text">
+                <h2>Today deserve delivery</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod adipisci quia sit ab. Inventore laudantium aliquam quidem provident odit quasi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tenetur sequi vitae totam. Nostrum excepturi deserunt nemo illo maxime quos!</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!--About-->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <!-- <img src="img/about.png" alt=""> -->
+            <video autoplay width="487.98" loop muted>
+                <source src="img/IMG_7123.MP4" type="video/mp4">
+                <source src="img/IMG_7123.ogg" type="video/ogg">
+            </video>
+            <!-- <video autoplay width="240" height="320" loop muted>
+                <source src="img/WhatsApp Video 2024-02-03 at 00.52.25.mp4" type="video/mp4">
+                <source src="img/WhatsApp Video 2024-02-03 at 00.52.25.ogg" type="video/ogg">
+            </video> -->
+        </div>
+        <div class="about-text">
+            <h2>50 years of serving communities</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod adipisci quia sit ab. Inventore laudantium aliquam quidem provident odit quasi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tenetur sequi vitae totam. Nostrum excepturi deserunt nemo illo maxime quos!</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact Now</h2>
+            <p>contact directly to customised dates till the end.<br>Tap Here.</p>
+        </div>
+        <div class="social">
+            <a href="tel:8866991028" target="_blank"><i class='bx bxs-phone'></i>
+            <a href="https://t.snapchat.com/1HEbw42y" target="_blank"><i class='bx bxl-snapchat'></i></a>
+            <a href="https://www.instagram.com/jayyayaya" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://wa.me/8866991028" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Our Company</a>
+        </div>
+        <p>&#169; All Right Reserved by Your Love.</p>
+    </section>
+
+    <!--link js-->
+    <script src="main.js"></script>
+</body>
+</html>

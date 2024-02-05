@@ -18,6 +18,9 @@ function closePopup(){
 function handleYes() {
     alert('You are smart sweetie!\nGo ahead...');
     closePopup();
+    closePopup1();
+    closePopup2();
+    closePopup3();
 }
     
 function handleNo() {
@@ -33,17 +36,17 @@ function closePopup1(){
 }
 
 function openPopup2(){
-    popup2.classList.add('open-popup1');
+    popup2.classList.add('open-popup2');
 }
 function closePopup2(){
-    popup2.classList.remove('open-popup1');
+    popup2.classList.remove('open-popup2');
 }
 
 function openPopup3(){
-    popup3.classList.add('open-popup1');
+    popup3.classList.add('open-popup3');
 }
 function closePopup3(){
-    popup3.classList.remove('open-popup1');
+    popup3.classList.remove('open-popup3');
 }
 
 
@@ -64,4 +67,7 @@ window.onscroll = () => {
     menu.classList.remove('bx-x');
     navbar.classList.remove('active');
 }
+
+
+
 

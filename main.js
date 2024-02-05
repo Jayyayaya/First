@@ -6,7 +6,9 @@ let popup1 = document.getElementById('popup1');
 let popup2 = document.getElementById('popup2');
 let popup3 = document.getElementById('popup3');
 
-document.getElementById('vid').play();
+let vid = document.getElementById("vid");
+vid.autoplay = true;
+vid.load();
 
 window.onload = function(){
     openPopup();

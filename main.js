@@ -50,6 +50,22 @@ function closePopup3(){
     popup3.classList.remove('open-popup3');
 }
 
+function increaseSize() {
+    // Get the first button element
+    var button1 = document.getElementById("button1");
+
+    // Get the current font size of the button1
+    var currentWidth = parseInt(window.getComputedStyle(button1).width);
+    var currentHeight = parseInt(window.getComputedStyle(button1).height);
+    var currentFont = parseInt(window.getComputedStyle(button1).fontSize);
+    var currentRadius = parseInt(window.getComputedStyle(button1).borderRadius);
+
+    // Increase the font size of the first button
+    button1.style.width = (currentWidth + 10) + "px"; // Increase by 4px each time
+    button1.style.height = (currentHeight + 10) + "px";
+    button1.style.fontSize = (currentFont + 2) + "px";
+    button1.style.borderRadius = (currentFont + 25) + "px";
+}
 
 // document.querySelector('#popup').addEventListener('wheel', preventScroll, {passive: false});
 // function preventScroll(e){

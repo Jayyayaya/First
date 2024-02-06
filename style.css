@@ -264,6 +264,22 @@ header{
     
     font-weight: 500;
 }
+.shop p{
+    color: var(--main-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem 0 0.5rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+.shop span{
+    color: var(--main-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0.2rem 0 0.5rem;
+    text-align: center;
+    text-transform: capitalize;
+}
 .shop-container{
     display: flex;
     flex-wrap: wrap;
@@ -375,10 +391,13 @@ header{
     text-transform: capitalize;
     margin: 0.5rem 0 1.4rem;
 }
+.contact p{
+    margin-bottom: 20px;
+}
   
 .social a{
     font-size: 27px;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 .social a .bx{
     padding: 5px;
